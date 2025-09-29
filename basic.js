@@ -175,19 +175,35 @@
     
 // }
 
-function changeTitle() {
-    document.getElementById("page-title").innerHTML = "JavaScript is awesome!";
+// function changeTitle() {
+//     document.getElementById("page-title").innerHTML = "JavaScript is awesome!";
+//   }
+
+//   function changeColor() {
+//     let colors = ["red", "green", "blue", "purple", "orange"];
+//     let random = Math.floor(Math.random() * colors.length);
+//     document.body.style.backgroundColor = colors[random];
+//   }
+
+//   function addMessage() {
+//     let p = document.createElement("p");
+//     p.innerHTML = "✨ You clicked the  button!";
+//     document.body.appendChild(p);
+//   }
+
+
+  let quotes = [
+    "The only way to do great work is to love what you do.",
+    "Life is what happens to you while you're busy making other plans.",
+    "The future belongs to those who believe in the beauty of their dreams."
+  ];
+
+  function getRandomQuote() {
+    let randomIndex = Math.floor(Math.random() * quotes.length);
+    return quotes[randomIndex];
   }
 
-  function changeColor() {
-    let colors = ["red", "green", "blue", "purple", "orange"];
-    let random = Math.floor(Math.random() * colors.length);
-    document.body.style.backgroundColor = colors[random];
+  function showQuote() {
+    let quote = getRandomQuote();
+    document.getElementById("quote").innerHTML = quote;
   }
-
-  function addMessage() {
-    let p = document.createElement("p");
-    p.innerHTML = "✨ You clicked the  button!";
-    document.body.appendChild(p);
-  }
-

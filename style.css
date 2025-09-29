@@ -1,23 +1,63 @@
-body {
+ 
+/* body {
   text-align: center;
   margin-top: 50px;
   font-family: 'Arial', sans-serif;
-  background-color: #f0f8ff; /* soft light blue background */
-  transition: background-color 0.5s ease; /* smooth color change */
+  background-color: #f0f8ff; /* soft light blue background 
+  transition: background-color 0.5s ease; smooth color change
+}  */
+
+/* button {
+  margin: 10px;
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 8px;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);  gradient button 
+  color: white;
+  transition: transform 0.2s, box-shadow 0.2s;
+} */
+
+/* @keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+} */ 
+
+body {
+  text-align: center;
+  margin-top: 50px;
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  transition: background-color 0.5s ease;
+}
+
+#quote {
+  font-size: 24px;
+  margin: 20px auto;
+  width: 60%;
+  color: #333;
+  font-style: italic;
+  transition: color 0.3s ease;
 }
 
 button {
   margin: 10px;
   padding: 12px 25px;
   font-size: 16px;
+  cursor: pointer;
+  border: none;
   border-radius: 8px;
-  background: linear-gradient(to right, #ff7e5f, #feb47b); /* gradient button */
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
   color: white;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 12px rgba(0,0,0,0.3);
+}
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-10px); }
-  to { opacity: 1; transform: translateY(0); }
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
 }
