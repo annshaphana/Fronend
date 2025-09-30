@@ -169,11 +169,13 @@
 //   let stars = "⭐".repeat(2 * i - 1);
 //   console.log(spaces + stars);
 // }
-
-// function changetitle() {
-//     document.getElementById("demo-text").innerHTML ="Javascript is awesome!";
+// --------------DOM-----------//
+//const element=document.getElementById("hello")
+// document.getElementById("Wel")
+//  function changetitle() {
+//      document.getElementById("demo-text").innerHTML ="Javascript is awesome!";
     
-// }
+//  }
 
 // function changeTitle() {
 //     document.getElementById("page-title").innerHTML = "JavaScript is awesome!";
@@ -192,18 +194,83 @@
 //   }
 
 
-  let quotes = [
-    "The only way to do great work is to love what you do.",
-    "Life is what happens to you while you're busy making other plans.",
-    "The future belongs to those who believe in the beauty of their dreams."
-  ];
+//   let quotes = [
+//     "The only way to do great work is to love what you do.",
+//     "Life is what happens to you while you're busy making other plans.",
+//     "The future belongs to those who believe in the beauty of their dreams."
+//   ];
 
-  function getRandomQuote() {
-    let randomIndex = Math.floor(Math.random() * quotes.length);
-    return quotes[randomIndex];
-  }
+//   function getRandomQuote() {
+//     let randomIndex = Math.floor(Math.random() * quotes.length);
+//     return quotes[randomIndex];
+//   }
 
-  function showQuote() {
-    let quote = getRandomQuote();
-    document.getElementById("quote").innerHTML = quote;
+//   function showQuote() {
+//     let quote = getRandomQuote();
+//     document.getElementById("quote").innerHTML = quote;
+//   }
+
+
+// generateName("Ann")
+
+// function generateName(name) {
+//   console.log(name);
+  
+// }
+
+// generate("Ann",21)
+
+// function generate(name,age) {
+//   console.log(name + age);
+  
+// }
+//numbers=[1,2,3,4,5]
+
+// for (let i = 0; i < numbers.length; i++) {
+//   const element = [i];
+  
+// }
+// console.lo/ ------------for ---------------//
+// g(numbers);
+
+// // ---------------foreach ------------//
+
+// numbers.forEach(number => {
+//   console.log(number);
+  
+// });
+
+// ------------ while loop ---------//
+// numbers=[10,20,30,40,50];
+// let i=0;
+// // while (i<numbers.length) {
+// //   console.log(numbers[i]);
+// //   i++
+// // }
+
+// do {
+//   console.log(i);
+//   console.log(numbers[i]);
+//   i++
+// } while (i<numbers.length);
+
+// --------- DOM -----------//
+document.getElementById("page-title").innerHTML="Hello";
+document.getElementById("demo-text").innerHTML="Click Me"
+
+console.log(changeColor);
+let colors  =["pink", "blue", "green", "yellow", "orange"];
+let index = 0;
+function changeColor() {
+  document.body.style.backgroundColor = colors[index];
+  index++;
+
+  if (index >= colors.length){
+    index = 0;
   }
+  
+}
+function getRandomQuote() {
+      let randomIndex = Math.floor(Math.random() * quotes.length);
+       return quotes[randomIndex];
+}
